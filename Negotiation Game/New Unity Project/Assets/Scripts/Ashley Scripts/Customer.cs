@@ -106,4 +106,19 @@ public class Customer
             }
             return false;
       }
+
+      public void decreaseFrustration(int f)
+      {
+      		if (frustration <= 0)
+      		{
+      			frustration = 0;
+      		} else {
+      			frustration = frustration - f;
+      		}	
+      }
+
+      public void increaseDemand(double d)
+      {
+      		demand += d;
+      }
 }

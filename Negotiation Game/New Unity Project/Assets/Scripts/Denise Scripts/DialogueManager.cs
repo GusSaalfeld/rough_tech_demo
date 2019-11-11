@@ -9,7 +9,12 @@ public class DialogueManager : MonoBehaviour
 {
     public Text nameText;
     public Text dialogueText;
+    public Text charismaText;
     public InputField priceField;
+    public Button charismaButton;
+    public Image charismaButtonImage;
+    public Button frustrationButton;
+    public Button demandButton;
     public int playerPrice;
 
     public ObjectDisplay objDis;
@@ -36,6 +41,9 @@ public class DialogueManager : MonoBehaviour
     private int numCustomers;
     //have customer max, check at end.
 
+    //Charisma mechanism
+    public int charisma;
+
 
     public void StartDialogue()
     {
@@ -58,7 +66,7 @@ public class DialogueManager : MonoBehaviour
     }
 
    public void DisplayNext()
-  {
+   {
         if (startedConvo == true)
         {
             Debug.Log("in dialogue");
@@ -70,6 +78,13 @@ public class DialogueManager : MonoBehaviour
             } else if (outcome == 1) {   //deal
                 Debug.Log("DEAL!");
                 dialogueText.text = lines[3];
+                charisma++;
+                charismaButton.interactable = true;
+                if(charisma == 3)
+                {
+                    charisma = 0;
+                }
+                //charismaText.text = charisma.ToString();
                 EndDialogue();
             } else if (outcome == 2) {   // walk away
                 Debug.Log("Walk away fustration");
@@ -117,7 +132,37 @@ public class DialogueManager : MonoBehaviour
     curr_item = null;
 
     startedConvo = false;
+
     Debug.Log("End");
   }
 
+  public void decreaseFrustration(int f)
+  {
+    curr_cust.decreaseFrustration(f);
+    Debug.Log("Frustration lowered!");
+    charisma = 0;
+    charismaButton.interactable = false;
+    hideCharismaOptions();
+  }
+
+  public void increaseDemand(double d)
+  {
+    curr_cust.increaseDemand(d);
+    Debug.Log("Demand increased");
+    charisma = 0;
+    charismaButton.interactable = false;
+    hideCharismaOptions();
+  }
+
+  public void showCharismaOptions()
+  {
+    frustrationButton.interactable = true;
+    demandButton.interactable = true;
+  }
+
+  public void hideCharismaOptions()
+  {
+    frustrationButton.interactable = false;
+    demandButton.interactable = false;
+  }
 }

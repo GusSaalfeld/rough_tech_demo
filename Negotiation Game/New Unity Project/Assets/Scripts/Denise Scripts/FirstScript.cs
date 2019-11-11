@@ -13,7 +13,7 @@ public class FirstScript : MonoBehaviour
     public FirstScript(int total)
     {
       charisma =  total;
-   }
+    }
 
     public void LowerFrus(int cost){
       cp -= cost; //possible to input cost?
