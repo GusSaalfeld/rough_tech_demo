@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class Customer
 {
-      double demand;
-      int income, frustration, frustrationMax, offerNum;
+      double demand, frustration;
+      int income, frustrationMax, offerNum;
       public Quirk[] quirks;
       public string name;
       public Item item;
@@ -62,7 +62,7 @@ public class Customer
         //percentOver should be between 0.1 and 1
         if (percentOver < 0.1)
         {
-            percentOver = 0.1;
+            percentOver = 0.1 * frustrationMult;
         }
         if (percentOver > 1)
         {
@@ -70,12 +70,21 @@ public class Customer
         }
         int frustrationVal = (int)(percentOver * 10) - 1;
         //Debug.Log(frustrationVal);
-        bool walkAway = increaseFrustration(frustrationTable[frustrationVal]);
+        bool walkAway = increaseFrustration(frustrationTable[frustrationVal] * frustrationMult);
         if(walkAway == true) return 2;
         //price customer is happy to pay
         //0.75 as placeholder for percentage of maxPrice that happyPrice is initialized to
         double happyPrice = maxPrice * 0.75 + incValue;
         double rangeMin = offer * 0.95;
+
+        double percent = happyPrice / offer;
+        double counter = percent * maxPrice;
+        //if integer truncation of counter offer will give 0 then walk away
+        if (counter < 1)
+        {
+            return 2;
+        }
+
         if (incValue < 0 || rangeMin <= happyPrice || (happyPrice >= maxPrice && offer <= maxPrice))
         {
             Debug.Log("offer accepted");
@@ -105,7 +114,7 @@ public class Customer
     //increments frustration by input value
     //Implement threaten to walk away by checking to see if meets threat threshold
     //change to int, return 0 if no threat, 1 if threat, 2 if walk away
-    public bool increaseFrustration(int f)
+    public bool increaseFrustration(double f)
       {
             frustration += f;
             if (frustration >= frustrationMax) {
