@@ -62,7 +62,7 @@ public class Customer
         //percentOver should be between 0.1 and 1
         if (percentOver < 0.1)
         {
-            percentOver = 0.1 * frustrationMult;
+            percentOver = 0.1;
         }
         if (percentOver > 1)
         {
@@ -79,6 +79,11 @@ public class Customer
 
         double percent = happyPrice / offer;
         double counter = percent * maxPrice;
+        //accept if integer value of counteroffer greater than or equal to offer
+        if(Math.Floor(counter) >= Math.Floor(offer))
+        {
+            return 1;
+        }
         //if integer truncation of counter offer will give 0 then walk away
         if (counter < 1)
         {
