@@ -15,6 +15,8 @@ public class DialogueManager : MonoBehaviour
     public Image charismaButtonImage;
     public Button frustrationButton;
     public Button demandButton;
+    public Text cust_name;
+    public Text item_mP;
     public int playerPrice;
 
     public ObjectDisplay objDis;
@@ -53,8 +55,12 @@ public class DialogueManager : MonoBehaviour
             curr_item = item_list.GetComponent<ItemList>().ItemCreator();  //Make this based on the item list at some point;
             curr_cust = customer_list.GetComponent<CustomerList>().CustomerCreator(curr_item);
            // dialogueText.dialogue = curr_cust.dialogue;
-            
+
             nameText.text = curr_cust.dialogue.name;
+            cust_name.text = curr_cust.name;
+
+            item_mP.text = "$" + curr_item.marketPrice.ToString();
+
             lines = curr_cust.dialogue.lines;
             dialogueText.text = lines[0];
             startedConvo = true;
@@ -100,7 +106,7 @@ public class DialogueManager : MonoBehaviour
         numCustomers++;
     item_list.GetComponent<ItemList>().DestroyItemGO();
     customer_list.GetComponent<CustomerList>().DestroyCustomerGO();
-    
+
     //Supposedly garbage collection will then delete them if nothing is pointing to them
     curr_cust = null;
     curr_item = null;
