@@ -30,12 +30,12 @@ public class Customer
         demand = d + qd;
         income = inc + qi;
         frustration = 0;
-        frustrationMax = fm + qf;
+        frustrationMax = (fm + qf) + (income * fm / 4);
         quirks = q;
         item = it;
         offerNum = 0;
         //percent above true value: [<10%, 10-20%, 20-30%, 30-40%, 50-60%, 60-70%, 70-80%, 80-90%, >90%]
-        frustrationTable = new int[] { 1, 3, 5, 7, 9, 12, 15, 20, 25, 30 };
+        frustrationTable = new int[] { 5, 10, 15, 20, 25, 30, 35, 50, 65, 80 };
         customerGO = cGO;
         dialogue = dia;
     }

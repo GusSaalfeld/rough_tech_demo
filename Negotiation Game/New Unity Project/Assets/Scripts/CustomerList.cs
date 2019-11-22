@@ -28,6 +28,12 @@ public class CustomerList : MonoBehaviour
             c.dialogue.name = "Diouf";
             return c;
         }
+        else if (spawn_customer == 2)
+        {
+            Customer c = new Customer("Diouf", 0.75, 5, 50, new Quirk[0], curr_item, customer_go, dialogue_list[0]);
+            c.dialogue.name = "Diouf";
+            return c;
+        }
         else
         {
             Debug.Log("ERROR: Customer index out of range");
