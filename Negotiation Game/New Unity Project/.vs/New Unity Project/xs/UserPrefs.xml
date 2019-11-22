@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Ashley Scripts/Customer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CustomerList.cs">
     <Files>
-      <File FileName="Assets/Scripts/CustomerList.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Ashley Scripts/Customer.cs" Line="38" Column="64" />
+      <File FileName="Assets/Scripts/CustomerList.cs" Line="51" Column="51" />
+      <File FileName="Assets/Scripts/Ashley Scripts/Customer.cs" />
       <File FileName="Assets/Scripts/Ashley Scripts/Item.cs" />
     </Files>
     <Pads>
@@ -11,9 +11,8 @@
           <Node name="New Unity Project" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Ashley Scripts" expanded="True">
-                  <Node name="Customer.cs" selected="True" />
-                </Node>
+                <Node name="Ashley Scripts" expanded="True" />
+                <Node name="CustomerList.cs" selected="True" />
               </Node>
             </Node>
           </Node>
