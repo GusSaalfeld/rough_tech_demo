@@ -15,7 +15,6 @@ public class DialogueManager : MonoBehaviour
     public Image charismaButtonImage;
     public Button frustrationButton;
     public Button demandButton;
-    public Text cust_name;
     public Text item_mP;
     public int playerPrice;
 
@@ -57,9 +56,8 @@ public class DialogueManager : MonoBehaviour
            // dialogueText.dialogue = curr_cust.dialogue;
 
             nameText.text = curr_cust.dialogue.name;
-            cust_name.text = curr_cust.name;
 
-            item_mP.text = "$" + curr_item.marketPrice.ToString();
+            item_mP.text = "Market Price: $" + curr_item.marketPrice.ToString();
 
             lines = curr_cust.dialogue.lines;
             dialogueText.text = lines[0];

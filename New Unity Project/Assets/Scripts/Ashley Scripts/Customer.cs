@@ -15,6 +15,7 @@ public class Customer
       public Dialogue dialogue;
 
       public Customer(string n, double d, int inc, int fm, Quirk[] q, Item it, GameObject cGO, Dialogue dia) {
+            //image = customerGo.GetComponent<Image>();
             double qd = 0;
             int qi = 0;
             int qf = 0;
@@ -114,7 +115,7 @@ public class Customer
       			frustration = 0;
       		} else {
       			frustration = frustration - f;
-      		}	
+      		}
       }
 
       public void increaseDemand(double d)

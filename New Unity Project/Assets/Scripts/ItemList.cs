@@ -13,7 +13,8 @@ public class ItemList : MonoBehaviour
         int itemID = Random.Range(0, items.Count);
         item_go = Instantiate(items[itemID]);
         item_go.transform.SetParent(transform.parent.transform);
-        item_go.transform.localPosition = new Vector3(450, -250, 0);
+        item_go.transform.localPosition = new Vector3(280, 51, 0); //use for UI4 & UI5
+        //item_go.transform.localPosition = new Vector3(-202, -70, 0); //use for UI 1-3
 
 
         if (itemID == 0)
