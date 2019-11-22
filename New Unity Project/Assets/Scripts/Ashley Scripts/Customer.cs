@@ -6,7 +6,8 @@ using UnityEngine;
 public class Customer
 {
       double demand;
-      int income, frustration, frustrationMax, offerNum;
+      public int income;
+      int frustration, frustrationMax, offerNum;
       public Quirk[] quirks;
       public string name;
       public Item item;

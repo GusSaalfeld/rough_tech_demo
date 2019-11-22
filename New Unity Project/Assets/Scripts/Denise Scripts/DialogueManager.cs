@@ -11,6 +11,8 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public Text charismaText;
     public Text priceField;
+    public Text cust_income;
+
     public Button charismaButton;
     public Image charismaButtonImage;
     public Button frustrationButton;
@@ -56,6 +58,7 @@ public class DialogueManager : MonoBehaviour
            // dialogueText.dialogue = curr_cust.dialogue;
 
             nameText.text = curr_cust.dialogue.name;
+            cust_income.text = "income: $" + curr_cust.income.ToString();
 
             item_mP.text = "Market Price: $" + curr_item.marketPrice.ToString();
 
