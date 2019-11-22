@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -360,7 +360,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1.051e-42, y: 1.02e-43, z: 0.53, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -943,6 +943,186 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.9552942
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: customer_go_list.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[1].lines.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[2].lines.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[3].lines.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[0].lines.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: customer_go_list.Array.data[2]
+      value: 
+      objectReference: {fileID: 7926330141205221483, guid: d3d87dff9328041429678f591115e13e,
+        type: 3}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: customer_go_list.Array.data[3]
+      value: 
+      objectReference: {fileID: 1188455945873182412, guid: d1f02524a26d44ff683bc58ffe2fc5a9,
+        type: 3}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[1].lines.Array.data[0]
+      value: 'Sorry to bother you, how much for this '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[1].lines.Array.data[1]
+      value: Woah that way too much! I might leave this store right now!! Can you
+        lower it to $
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[1].lines.Array.data[2]
+      value: 'How about '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[1].lines.Array.data[3]
+      value: 'Deal! Thank you so much '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[1].lines.Array.data[4]
+      value: No way. I am never buying from you again.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[2].lines.Array.data[0]
+      value: 'Hello, how much is this '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[2].lines.Array.data[1]
+      value: That is way too much! Do you want me to leave? I will leave. How about
+        you lower it to
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[2].lines.Array.data[2]
+      value: 'How about '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[2].lines.Array.data[3]
+      value: 'That is a good deal. I''ll take it. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[2].lines.Array.data[4]
+      value: That's too much, I'm done here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[3].lines.Array.data[0]
+      value: Excuse me, how much is this
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[3].lines.Array.data[1]
+      value: 'That is way too much! I might leave. I''m willing to pay '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[3].lines.Array.data[2]
+      value: 'How about '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[3].lines.Array.data[3]
+      value: Perfect, we have a deal!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[3].lines.Array.data[4]
+      value: No way! I'm never coming back here again!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[0].lines.Array.data[5]
+      value: That's a little bit out of my budget, what do you think about $
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[0].lines.Array.data[6]
+      value: You have to be kidding me! How about $
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[0].lines.Array.data[0]
+      value: Good afternoon! How much are the
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[0].lines.Array.data[1]
+      value: Your prices are way too high! I'll leave if I'm not presented with a
+        resasonable price! How about $
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[0].lines.Array.data[2]
+      value: How about $
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[0].lines.Array.data[3]
+      value: Perfect, we have a deal!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[1].lines.Array.data[5]
+      value: That's a little too high for me . Can you consider $
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[1].lines.Array.data[6]
+      value: Sorry but that price is ridiculous. I'm willing to pay $
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[2].lines.Array.data[5]
+      value: 'I don''t understand why you have set the price so high. What about '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[2].lines.Array.data[6]
+      value: Do you take me for a joke? The most I will pay is
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[3].lines.Array.data[5]
+      value: I don't know about that price. How about you bring it down to $
+      objectReference: {fileID: 0}
+    - target: {fileID: 8243526009308179364, guid: d41bb83ebdac7224d91e65514181adf4,
+        type: 3}
+      propertyPath: dialogue_list.Array.data[3].lines.Array.data[6]
+      value: There is no way I would ever pay that! I'm willing to go as high as $
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d41bb83ebdac7224d91e65514181adf4, type: 3}

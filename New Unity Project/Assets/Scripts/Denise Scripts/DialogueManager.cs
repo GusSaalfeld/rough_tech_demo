@@ -26,6 +26,7 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject item_list;
     public GameObject customer_list;
+  
 
     private Item curr_item;
     private Customer curr_cust;
@@ -44,6 +45,7 @@ public class DialogueManager : MonoBehaviour
     public int charisma;
 
 
+
     public void StartDialogue()
     {
         if (startedConvo == false && numCustomers < maxCustomers)
@@ -56,7 +58,7 @@ public class DialogueManager : MonoBehaviour
             
             nameText.text = curr_cust.dialogue.name;
             lines = curr_cust.dialogue.lines;
-            dialogueText.text = lines[0];
+            dialogueText.text = lines[0] + " " + curr_item.name + "?";
             startedConvo = true;
         }
         if (numCustomers >= maxCustomers) {
@@ -71,10 +73,7 @@ public class DialogueManager : MonoBehaviour
             Debug.Log("in dialogue");
             playerPrice = int.Parse(priceField.text); //assume user inputs int
             int outcome = curr_cust.offerAccepted(playerPrice);
-            if (outcome == 0) {  //No deal, counteroffer
-                double counter = curr_cust.counterOffer(playerPrice);
-                dialogueText.text = lines[2] + " " + (int)counter + " instead?";
-            } else if (outcome == 1) {   //deal
+          if(outcome == 1) {   //deal
                 Debug.Log("DEAL!");
 
                 EndDialogue();
@@ -82,6 +81,27 @@ public class DialogueManager : MonoBehaviour
                 Debug.Log("Walk away fustration");
                 dialogueText.text = lines[4];
                 EndDialogue();
+            } else {  //No deal, counteroffer
+                double counter = curr_cust.counterOffer(playerPrice);
+                if (outcome == 0)
+                {
+                    Debug.Log("Basic counter offer.");
+                    dialogueText.text = lines[2] + " $" + (int)counter + " instead?";
+                }else if (outcome == 3)
+                {
+                    Debug.Log("Lightly annoyed counter offer.");
+                    dialogueText.text = lines[5] + " $" + (int)counter + " instead?";
+                }
+                else if (outcome == 4)
+                {
+                    Debug.Log("Medium annoyed counter offer.");
+                    dialogueText.text = lines[6] + " $" + (int)counter ;
+                }
+                else if (outcome == 5)
+                {
+                    Debug.Log("Threaten to leave. Highly annoyed counter offer.");
+                    dialogueText.text = lines[1] + " $" + (int)counter;
+                }
             }
         }
   }
@@ -110,7 +130,7 @@ public class DialogueManager : MonoBehaviour
     Debug.Log("End");
   }
 
-  public void iDemand(double d)
+  public void Demand(double d)
   {
     curr_cust.increaseDemand(d);
     Debug.Log("Demand increased");

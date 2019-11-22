@@ -18,14 +18,26 @@ public class CustomerList : MonoBehaviour
 
         if (spawn_customer == 0)
         {
-            Customer c = new Customer("Musu", 0.5, 10000, 100, new Quirk[0], curr_item, customer_go, dialogue_list[0]);
-            c.dialogue.name = "Musu";
+            Customer c = new Customer("Awa", 0.5, 10000, 100, new Quirk[0], curr_item, customer_go, dialogue_list[0]);
+            c.dialogue.name = "Awa";
             return c;
         }
         else if (spawn_customer == 1)
         {
-            Customer c = new Customer("Diouf", 0.5, 10000, 100, new Quirk[0], curr_item, customer_go, dialogue_list[0]);
-            c.dialogue.name = "Diouf";
+            Customer c = new Customer("Rokhaya", 0.5, 10000, 100, new Quirk[0], curr_item, customer_go, dialogue_list[1]);
+            c.dialogue.name = "Rokhaya";
+            return c;
+        }
+        else if (spawn_customer == 2)
+        {
+            Customer c = new Customer("Abdou", 0.5, 10000, 100, new Quirk[0], curr_item, customer_go, dialogue_list[2]);
+            c.dialogue.name = "Abdou";
+            return c;
+        }
+        else if (spawn_customer == 3)
+        {
+            Customer c = new Customer("Mohammed", 0.5, 10000, 100, new Quirk[0], curr_item, customer_go, dialogue_list[3]);
+            c.dialogue.name = "Mohammed";
             return c;
         }
         else
