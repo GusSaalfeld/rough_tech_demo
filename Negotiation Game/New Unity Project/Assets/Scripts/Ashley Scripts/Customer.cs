@@ -54,7 +54,7 @@ public class Customer
             frustrationMult = 2;
         }
 
-        double maxPrice = demand * item.marketPrice;
+        double maxPrice = demand * item.marketPrice * (3 / income);
         double incValue = Math.Log(offerNum, 10) * (offer - (maxPrice * .75));
         //TODO: consider hyperbolic function?
         //increase frustration by amount proportional to offer
@@ -105,7 +105,7 @@ public class Customer
     //precondition: offer > happy price
     public double counterOffer(double offer)
     {
-        double maxPrice = demand * item.marketPrice;
+        double maxPrice = demand * item.marketPrice * (3 / income);
         double incValue = Math.Log(offerNum, 10) * (offer - maxPrice * 0.75);
         double happyPrice = maxPrice * 0.75 + incValue;
         double percent = happyPrice / offer;
