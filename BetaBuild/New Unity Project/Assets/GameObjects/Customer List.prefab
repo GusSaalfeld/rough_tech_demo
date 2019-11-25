@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8243526009308179366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8243526009308179365}
+  - component: {fileID: 8243526009308179364}
+  m_Layer: 0
+  m_Name: Customer List
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8243526009308179365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8243526009308179366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 0.9552942, y: 0.9552942, z: 0.9552942}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8243526009308179364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8243526009308179366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5acda12c1cf872947ae10ba6dd18b03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  customer_go_list:
+  - {fileID: 5987164161433768941, guid: 1b0ba69328d4a0e44b2dc7e350aa6eb6, type: 3}
+  - {fileID: 6198767645353983175, guid: 98365fece908b844ebf0df53184d731a, type: 3}
+  - {fileID: 7926330141205221483, guid: 22fdb01931a1c9247b4345efeecba622, type: 3}
+  - {fileID: 1188455945873182412, guid: f15f52531fd4d3546b109f6b7d2b1838, type: 3}
+  dialogue_list:
+  - name: 
+    lines:
+    - Good afternoon! How much are the
+    - "Your prices are way too high! I'll leave if I'm not presented with a resasonable
+      price! How about \u20A3"
+    - "How about \u20A3"
+    - Perfect, we have a deal!
+    - That's too much, I'm done here.
+    - "That's a little bit out of my budget, what do you think about \u20A3"
+    - "You have to be kidding me! How about \u20A3"
+    - Well now I HAVE to have it!
+    - You're right, I am getting a bit heated. Sorry!
+  - name: 
+    lines:
+    - Sorry to bother you, how much for this
+    - "Woah that way too much! I might leave this store right now!! Can you lower
+      it to \u20A3"
+    - "How about \u20A3"
+    - 'Deal! Thank you so much. '
+    - No way. I am never buying from you again.
+    - "That's a little too high for me . Can you consider \u20A3"
+    - "Sorry but that price is ridiculous. I'm willing to pay \u20A3"
+    - Well now I HAVE to have it!
+    - You're right, I am getting a bit heated. Sorry!
+  - name: 
+    lines:
+    - Hello, how much is this
+    - "That is way too much! Do you want me to leave? I will leave. How about you
+      lower it to \u20A3"
+    - "How about \u20A3"
+    - 'That is a good deal. I''ll take it. '
+    - That's too much, I'm done here.
+    - "I don't understand why you have set the price so high. What about \u20A3 "
+    - "Do you take me for a joke? The most I will pay is \u20A3"
+    - Well now I HAVE to have it!
+    - You're right, I am getting a bit heated. Sorry!
+  - name: 
+    lines:
+    - Excuse me, how much is this
+    - "That is way too much! I might leave. I'm willing to pay \u20A3"
+    - "How about \u20A3"
+    - Perfect, we have a deal!
+    - No way! I'm never coming back here again!
+    - "I don't know about that price. How about you bring it down to \u20A3"
+    - "There is no way I would ever pay that! I'm willing to go as high as \u20A3"
+    - Well now I HAVE to have it!
+    - You're right, I am getting a bit heated. Sorry!
