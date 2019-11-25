@@ -927,6 +927,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8372491582261855078, guid: f15f52531fd4d3546b109f6b7d2b1838,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.3166666
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372491582261855078, guid: f15f52531fd4d3546b109f6b7d2b1838,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 12.833333
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f15f52531fd4d3546b109f6b7d2b1838, type: 3}
 --- !u!1001 &706713812
@@ -1045,6 +1055,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923557142417031067, guid: 98365fece908b844ebf0df53184d731a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.3166666
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923557142417031067, guid: 98365fece908b844ebf0df53184d731a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 12.833333
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98365fece908b844ebf0df53184d731a, type: 3}
@@ -1454,6 +1474,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8410050440148186517, guid: 22fdb01931a1c9247b4345efeecba622,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.3166666
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410050440148186517, guid: 22fdb01931a1c9247b4345efeecba622,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 12.833333
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22fdb01931a1c9247b4345efeecba622, type: 3}
 --- !u!1 &1948958966
@@ -1799,6 +1829,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987164161433768940, guid: 1b0ba69328d4a0e44b2dc7e350aa6eb6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.3166666
+      objectReference: {fileID: 0}
+    - target: {fileID: 5987164161433768940, guid: 1b0ba69328d4a0e44b2dc7e350aa6eb6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 12.833333
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b0ba69328d4a0e44b2dc7e350aa6eb6, type: 3}

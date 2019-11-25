@@ -53,27 +53,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9674}
     - Class: 114
-      Script: {instanceID: 9838}
+      Script: {instanceID: 9760}
     - Class: 114
-      Script: {instanceID: 9878}
+      Script: {instanceID: 9840}
     - Class: 114
-      Script: {instanceID: 10278}
+      Script: {instanceID: 9880}
     - Class: 114
-      Script: {instanceID: 10648}
+      Script: {instanceID: 10280}
     - Class: 114
-      Script: {instanceID: 10668}
+      Script: {instanceID: 10362}
     - Class: 114
-      Script: {instanceID: 10844}
+      Script: {instanceID: 10652}
     - Class: 114
-      Script: {instanceID: 11136}
+      Script: {instanceID: 10672}
     - Class: 114
-      Script: {instanceID: 11240}
+      Script: {instanceID: 10848}
     - Class: 114
-      Script: {instanceID: 11508}
+      Script: {instanceID: 11140}
     - Class: 114
-      Script: {instanceID: 62428}
+      Script: {instanceID: 11246}
     - Class: 114
-      Script: {instanceID: 63122}
+      Script: {instanceID: 11516}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -114,33 +114,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9674}
     - Class: 114
-      Script: {instanceID: 9838}
+      Script: {instanceID: 9840}
     - Class: 114
-      Script: {instanceID: 9878}
+      Script: {instanceID: 9880}
     - Class: 114
-      Script: {instanceID: 10024}
+      Script: {instanceID: 10026}
     - Class: 114
-      Script: {instanceID: 10278}
+      Script: {instanceID: 10280}
     - Class: 114
-      Script: {instanceID: 10422}
+      Script: {instanceID: 10426}
     - Class: 114
-      Script: {instanceID: 10648}
+      Script: {instanceID: 10652}
     - Class: 114
-      Script: {instanceID: 10668}
+      Script: {instanceID: 10672}
     - Class: 114
-      Script: {instanceID: 10788}
+      Script: {instanceID: 10792}
     - Class: 114
-      Script: {instanceID: 10960}
+      Script: {instanceID: 10964}
     - Class: 114
-      Script: {instanceID: 11118}
+      Script: {instanceID: 11122}
     - Class: 114
-      Script: {instanceID: 11136}
+      Script: {instanceID: 11140}
     - Class: 114
-      Script: {instanceID: 11240}
+      Script: {instanceID: 11246}
     - Class: 114
-      Script: {instanceID: 11508}
+      Script: {instanceID: 11516}
     - Class: 114
-      Script: {instanceID: 11542}
+      Script: {instanceID: 11550}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -177,19 +177,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9674}
     - Class: 114
-      Script: {instanceID: 9838}
+      Script: {instanceID: 9840}
     - Class: 114
-      Script: {instanceID: 9878}
+      Script: {instanceID: 9880}
     - Class: 114
-      Script: {instanceID: 10278}
+      Script: {instanceID: 10280}
     - Class: 114
-      Script: {instanceID: 10648}
+      Script: {instanceID: 10652}
     - Class: 114
-      Script: {instanceID: 11136}
+      Script: {instanceID: 11140}
     - Class: 114
-      Script: {instanceID: 11508}
+      Script: {instanceID: 11460}
     - Class: 114
-      Script: {instanceID: 14718}
+      Script: {instanceID: 11516}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -229,6 +229,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: c6a57b024b829a5613c27a5b85b0b2ed
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: startgame
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -397,6 +403,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 344fddb6df783e2c780af505a6b51e1d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TargetGoalHolder
   - hash:
       serializedVersion: 2
       Hash: d7a4aa2c23610a354b5b0d9bd27d52bb
@@ -609,6 +621,12 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: c5765a86d60f0f24ebc1778e03ea4430
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WinningScene
+  - hash:
+      serializedVersion: 2
       Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -667,28 +685,10 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: c5765a86d60f0f24ebc1778e03ea4430
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: WinningScene
-  - hash:
-      serializedVersion: 2
-      Hash: 344fddb6df783e2c780af505a6b51e1d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: TargetGoalHolder
-  - hash:
-      serializedVersion: 2
-      Hash: c6a57b024b829a5613c27a5b85b0b2ed
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: startgame
   platform: 5
   scenePathNames:
   - Assets/Scenes/GameStartScreen.unity
   - Assets/Scenes/UI4.unity
   - Assets/Scenes/WinningScene.unity
-  playerPath: C:/Users/Gustowski/Desktop/v2 Eko/Latest!/New Unity Project/Builds/New
-    Unity Project.exe
+  playerPath: C:/Users/Gustowski/Desktop/New folder (3)/rough_tech_demo/BetaBuild/New
+    Unity Project/Builds/New Unity Project.exe

@@ -19,6 +19,7 @@ public class Customer
       public Dialogue dialogue;
       public ExpressionChanges expressions;
     public double finalOffer;
+    public int real_income;
 
     public Customer(string n, double d, int inc, int fm, Quirk[] q, Item it, GameObject cGO, Dialogue dia, int incomeBracket)
     {
@@ -34,6 +35,7 @@ public class Customer
         name = n;
         //stored as value representing percent of market price they are willing to pay
         demand = d + qd;
+        real_income = inc;
         income =  incomeBracketMultiplier[incomeBracket] + qi;
         frustration = 0;
         frustrationMax = (fm + qf);
@@ -53,6 +55,8 @@ public class Customer
     //No deal == 0
     // Deal == 1
     //Walk away == 2
+
+    double lastIncValue = 0;
     
     double happyPrice = 0;
     double maxPrice = 0;
@@ -81,6 +85,12 @@ public class Customer
 
         
         double incValue = 1.3 * Math.Log(offerNum, 11) * (offer - (maxPrice * .75));
+
+        if(lastIncValue != 0 && lastIncValue > incValue) {
+            incValue = lastIncValue;
+        }
+
+        lastIncValue = incValue;
         //TODO: consider hyperbolic function?
 
 
@@ -129,6 +139,14 @@ public class Customer
     {
         double maxPrice = demand * item.marketPrice * (income / 3);       
         double incValue = 1.3 * Math.Log(offerNum, 11) * (offer - (maxPrice * .75));
+
+        if(lastIncValue != 0 && lastIncValue > incValue) {
+            incValue = lastIncValue;
+        }
+
+        lastIncValue = incValue;
+
+
         happyPrice = maxPrice * 0.70 + incValue;
         double percent = happyPrice / offer;
         return happyPrice;

@@ -59,9 +59,9 @@ public class DialogueManager : MonoBehaviour
            // dialogueText.dialogue = curr_cust.dialogue;
 
             nameText.text = curr_cust.name;
-            cust_income.text = "income: $" + curr_cust.income.ToString();
+            cust_income.text = "income: ₣" + curr_cust.real_income.ToString();
 
-            item_mP.text = "Market Price: $" + curr_item.marketPrice.ToString();
+            item_mP.text = "Market Price: ₣" + curr_item.marketPrice.ToString();
 
             lines = curr_cust.dialogue.lines;
             dialogueText.text = lines[0] + " " +curr_item.name+"?";
@@ -126,9 +126,9 @@ public class DialogueManager : MonoBehaviour
     startedConvo = false;
   }
 
- public void increaseDemand(int d)
+ public void increaseDemand()
   {
-    curr_cust.increaseDemand(d);
+    curr_cust.increaseDemand(0.5f);
     Debug.Log("Demand increased");
     charisma = 0;
     dialogueText.text = lines[7];
